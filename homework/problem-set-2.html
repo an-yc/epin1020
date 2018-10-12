@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find the GCD!</title>
+
+<script>
+function GCD_two_numbers(x, y) {
+  x = parseInt(x);
+  y = parseInt(y);
+  while(y) {
+    var t=y;
+    y=x%y;
+    x=t;
+  }
+  return x;
+}
+function get_values() {
+  var x = prompt("Enter first number:");
+  var y = prompt("Enter second number:");
+  var z = GCD_two_numbers(x,y);
+  var x = document.getElementById("demo");
+  x.style.fontSize = "25px";
+  x.style.color = "blue";
+  document.getElementById("demo").innerHTML = z ;
+}
+</script>
+</head>
+
+<body>
+  <h1>Find the Greatest Common Divisior.</h1>
+  <p>The greatest common divisor (GCD) is the largest positive integer that divides each of the integers.
+  <p>For example, the GCD of 8 and 12 is 4.<div>
+  <button onclick="get_values();">Click here to input two numbers and find their GCD.</button>
+  <h3 style="border-style: solid;padding:5px;width:200px;top:20px;">The GCD is: <p id="demo"></p> </h3>
+
+</body>
+</html>
