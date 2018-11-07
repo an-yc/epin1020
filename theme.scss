@@ -60,9 +60,13 @@ html,body {
 
 
 .bg-gradient {
-  overflow: hidden;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-  background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
+	overflow: hidden;
+	color: color-yiq(map-get($theme-colors, 'primary'));
+	background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
+	background-image: url(https://pingendo.com/site-assets/cover.jpg);
+	background-position: top left;
+	background-size: 100%;
+	background-repeat: repeat;
 }
 
 .filter-dark {

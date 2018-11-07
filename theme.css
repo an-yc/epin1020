@@ -6415,7 +6415,11 @@ html, body {
 .bg-gradient {
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(-30deg, #4f70ce 0%, #12bbad 50%, #12bbad 100%); }
+  background: linear-gradient(-30deg, #4f70ce 0%, #12bbad 50%, #12bbad 100%);
+  background-image: url(https://pingendo.com/site-assets/cover.jpg);
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: repeat; }
 
 .filter-dark {
   overflow: hidden;
